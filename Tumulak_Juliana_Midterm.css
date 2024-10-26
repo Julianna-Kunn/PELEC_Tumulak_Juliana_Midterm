@@ -1,0 +1,652 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;             
+    padding: 0;             
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    border-radius: 5px;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.navbar button {
+    background-color: #faa1d4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: underline;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fafaf7;
+}
+
+.section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    border-radius: 5%;
+}
+
+.home {
+    background-color: #ebe8df;
+    position: relative; 
+    overflow: hidden;  
+}
+
+.home h1 {
+    margin-top: none;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300px;
+    color: #faa1d4;
+    position: absolute;  
+    left: 50%;          
+    top: 40%;          
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.photo-flex {
+    display: flex;
+    justify-content: space-between; 
+    position: relative; 
+    z-index: 2;        
+    margin: 0;         
+    padding: 0;        
+    width: 100vw;      
+    height: 400px;     
+    overflow: hidden;  
+    position: absolute; 
+    bottom: 0;         
+    background-image: center;
+}
+
+.photo1 {
+    width: 400px; 
+    height: 500px;        
+    object-fit: cover;
+    margin-left: -100px;
+}
+
+.photo2 {
+    width: 300px; 
+    height: 400px;        
+    object-fit: cover;   
+    margin-left: -100px;
+}
+
+.photo31 {
+    width: 300px; 
+    height: 400px;        
+    object-fit: cover;   
+    margin-right: -50px;
+    z-index: 1;
+}
+
+.photo32 {
+    width: 300px; 
+    height: 400px;        
+    object-fit: cover;   
+    margin-left: -80px;
+}
+
+.photo4 {
+    width: 400px; 
+    height: 400px;        
+    object-fit: cover;   
+    margin-left: -100px;
+}
+
+.photo5 {
+    width: 750px; 
+    height: 400px;        
+    object-fit: cover;  
+    margin-left: -80px;
+    margin-right: -10px;
+}
+
+.photo6 {
+    width: 300px;
+    height: 400px;        
+    object-fit: cover;   
+    margin-left: -100px;
+}
+.w1{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    top: 310px;
+    left: 360px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 2;
+}
+
+.w2{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+    top: 78px;
+    right: 65px;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 3;
+}
+
+.w3{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    top: 38%;
+    left: 55%;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 2;
+}
+
+.w4{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    top: 145px;
+    left: 110px;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 2;
+}
+
+.aboutme {
+    background-color: #2b2a2a;
+    position: relative;
+    overflow: hidden;  
+    background-image: url('3.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutmeCap{
+    flex: 1;
+}
+
+.aboutme h1{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    color: #faa1d4;
+    left: 45%;        
+    top: 30%;  
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 1px;
+}
+
+.aboutme p{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    left: 50%;        
+    top: 0%;
+    text-align: center;
+    line-height: 0;
+    bottom: 5%;
+}
+
+.aboutme p.description{
+    background-color: #ebe8df;
+    border-radius: 12%;
+    padding: 20px;
+    margin-top: 2px;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 23px;
+    color:#2b2a2a;
+    display: flex;
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 20px;
+    line-height: .95;
+}
+
+.photo-flex1 {
+    display: flex;
+    justify-content: space-between;  
+    position: relative; 
+    z-index: 2;        
+    margin: 0;         
+    padding: 0;        
+    width: 100vw;      
+    height: auto;     
+    overflow: hidden;  
+    position: absolute; 
+    bottom: 1;        
+    background-image: center;
+}
+
+.photo8{
+    display: block;
+    margin-left: 3.5%;
+    height: 300;
+    width: 45%;
+    object-fit: contain;   
+}
+
+.education {
+    background-color: #ebe8df;
+    position: relative; 
+    overflow: hidden;  
+}
+
+.education h1 {
+    margin-top: none; 
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250px;
+    color: #faa1d4;
+    position: absolute; 
+    left: 50%;        
+    top: 50%;          
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.educationPic{
+    display: flex;
+    justify-content: space-between; 
+    position: relative; 
+    z-index: 2;        
+    margin: 0;         
+    padding: 0;        
+    width: 100vw;      
+    height: 400px;     
+    overflow: hidden; 
+    position: absolute; 
+    bottom: 0;         
+    background-image: center;
+}
+
+.gradpic1{
+    position: absolute;
+    top: 125px;
+    left: 50px;
+    width: 250px; 
+    height: 250px;        
+    object-fit: cover;
+    z-index: 2;
+    opacity: .8;
+}
+
+.gradpic2{
+    position: absolute;
+    top: 125px;
+    left: 330px;
+    width: 250px; 
+    height: 250px;       
+    object-fit: cover;
+    z-index: 2;
+    opacity: .8;
+}
+
+.credentials{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    top: 325px;
+    left: 425px;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 3;
+}
+
+.education h2{
+    margin-top: none; 
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 175px;
+    color: #2b2a2a;
+    position: absolute; 
+    left: 83%;        
+    top: 15%;          
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.Descredentials{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    top: 78px;
+    right: 650px;
+    text-align: justify;
+    position: absolute;
+    color:#2b2a2a;
+    z-index: 2;
+}
+
+.skill {
+    background-color: #2b2a2a;
+    position: relative; 
+    overflow: hidden;  
+    background-image: url('3.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#skill {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;    
+    justify-content: center; 
+    height: 100vh;           
+    padding-top: 65px;
+}
+
+#skill h1 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    margin: 0;               
+    line-height: 1.2;        
+    margin-top: 22%;
+    margin-left: 100px;
+    color: #faa1d4;
+    z-index: 1;
+}
+
+.SkillDes{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 18px;
+    top: 248px;
+    right: 750px;
+    text-align: center;
+    position: absolute;
+    color: #ebebeb;
+    z-index: 2;
+}
+
+
+.border1 {
+    border: 2px solid #ebe8df;
+    padding: 10px;          
+    margin: 20px 0;         
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;           
+    align-items: center;    
+    justify-content: flex-start; 
+    position: absolute;
+    top: 100px;
+    left: 42.5%;
+}
+
+.border1 h2 {
+    margin-right: 20px;    
+    font-size: 24px;        
+    color: #faa1d4;         
+    text-align: center;
+}
+
+.border1 i {
+    margin: 0 10px;         
+    font-size: 70px;        
+    animation: move 2s linear infinite;
+}
+
+.border1 i:hover {
+    transform: scale(1.2);  
+    color: white;
+}
+
+.border2 {
+    border: 2px solid #ebe8df;
+    padding: 10px;           
+    margin: 20px 0;         
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;           
+    align-items: center;     
+    justify-content: flex-start; 
+    position: absolute;
+    top: 250px;
+    left: 41%;
+}
+
+.border2 h2 {
+    margin-right: 20px;     
+    font-size: 24px;        
+    color: #faa1d4;         
+    text-align: center;
+}
+
+.border2 i {
+    margin: 0 10px;        
+    font-size: 70px;       
+    animation: move 2s linear infinite;
+}
+
+.border2 i:hover {
+    transform: scale(1.2);  
+    color: white;
+}
+
+.border3 {
+    border: 2px solid #ebe8df;
+    padding: 10px;           
+    margin: 20px 0;         
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;           
+    align-items: center;    
+    justify-content: flex-start; 
+    position: absolute;
+    top: 405px;
+    left: 40.5%;
+}
+
+.border3 h2{
+    margin-right: 20px;    
+    font-size: 24px;       
+    color: #faa1d4;        
+    text-align: center;
+}
+
+.border3 i {
+    margin: 0 10px;         
+    font-size: 70px;        
+    transition: transform .5s; 
+    animation: move 2s linear infinite;
+}
+
+.border3 i:hover {
+    transform: scale(1.2);  
+    color: white;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.contact{
+    background-color: #ebe8df;
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+}
+
+.contact h1 {
+    margin-top: none; 
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 180px;
+    color: #faa1d4;
+    position: absolute; 
+    left: 50%;        
+    top: 80%;          
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.ContactDes{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 28px;
+    top: 425px;
+    left: 9%;
+    text-align: center;
+    position: absolute;
+    color: #2b2a2a;
+    z-index: 2;
+}
+
+.contactPhoto {
+    display: block;          
+    width: 750px;           
+    height: 500px;          
+    object-fit: cover;      
+    margin: 0 auto;         
+}
+
+.fb {
+    border: 2px solid transparent;
+    padding: 10px;           
+    margin: 20px 0;         
+    width: fit-content;     
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;          
+    align-items: center;     
+    justify-content: flex-start;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+}
+
+.fb i {
+    margin: 0 10px;         
+    font-size: 27px;        
+}
+
+.insta {
+    border: 2px solid transparent;
+    padding: 10px;           
+    margin: 20px 0;        
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;           
+    align-items: center;     
+    justify-content: flex-start; 
+    position: absolute;
+    top: 230px;
+    left: 20%;
+}
+
+.insta i {
+    margin: 0 10px;        
+    font-size: 27px;        
+}
+
+.gmail {
+    border: 2px solid transparent;
+    padding: 10px;           
+    margin: 20px 0;        
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box; 
+    display: flex;           
+    align-items: center;     
+    justify-content: flex-start; 
+    position: absolute;
+    top: 280px;
+    left: 47%;
+}
+
+.gmail i {
+    margin: 0 10px;         
+    font-size: 27px;        
+}
+
+.number {
+    border: 2px solid transparent;
+    padding: 10px;           
+    margin: 20px 0;         
+    width: fit-content;      
+    color: #faa1d4;
+    box-sizing: border-box;  
+    display: flex;           
+    align-items: center;     
+    justify-content: flex-start; 
+    position: absolute;
+    top: 130px;
+    left: 60%;
+}
+
+.number i {
+    margin: 0 10px;         
+    font-size: 27px;        
+}
+
+a {
+    color: #3c3c3c; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: #faa1d4;
+}
